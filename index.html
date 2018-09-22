@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Pomodoro Clock</title>
+</head>
+
+<body>
+    <div id='clockbox'>
+        <div class="row">
+
+            <div id="sessionLength" class="col-6">SESSION<br>
+                <a href="#" class="decreaseTime">- </a>
+                <span class="sessionLengthTime-js">25</span>
+                <a href="#" class="increaseTime">+ </a>
+            </div>
+            <div id="breakLength" class="col-6" style="text-align:right">BREAK<br>
+                <a href="#" class="decreaseTime">- </a>
+                <span class="breakLengthTime-js">5</span>
+                <a href="#" class="increaseTime">+ </a>
+            </div>
+        </div>
+        <div id="clockDisplay" class="row">
+            <div class="col-12" style="text-align:center"><span class="sessionLengthTime-js">25</span>:<span class="sessionLengthTimeSeconds-js">00</span></div>
+        </div>
+        <div class="row">
+            <div class="col-12 sessionOrBreak" style="text-align:center">SESSION</div>
+        </div>
+        <div id="resetClock" class="row">
+            <div class="col-12">
+                <button class="setTimer btn-block">BEGIN</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
